@@ -110,11 +110,22 @@ extension PeripheralController: CBPeripheralManagerDelegate {
                 guard let encounter = bluetraceImplementation.peripheral.processWriteRequestDataReceived(dataWritten: receivedCharacteristicValue) else { return }
 
                 encounter.saveToCoreData()
-                BlueTraceLocalNotifications.shared.triggerIntervalLocalPushNotifications(pnContent: ["contentTitle":"contentTitle","contentBody":"contentBody"], identifier: "identifier")
+                
+                BlueTraceLocalNotifications.shared.triggerTestConnectionPushNotifications(encounter: encounter)
 
             }
         }
         peripheral.respond(to: requests[0], withResult: .success)
 
     }
+}
+
+extension Date {
+    func toString( dateFormat format  : String ) -> String
+    {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = format
+        return dateFormatter.string(from: self)
+    }
+
 }

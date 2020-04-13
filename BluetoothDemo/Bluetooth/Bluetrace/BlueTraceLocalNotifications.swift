@@ -58,6 +58,16 @@ class BlueTraceLocalNotifications: NSObject {
         center.add(request)
 
     }
+    
+    func triggerTestConnectionPushNotifications(encounter:EncounterRecord) {
+        let modelC = encounter.modelC ?? "modelc"
+        let timestamp = encounter.timestamp ?? Date()
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss.SSS"
+        let timestampStr = dateFormatter.string(from: timestamp)
+        triggerIntervalLocalPushNotifications(pnContent: ["contentTitle":modelC,"contentBody":timestampStr], identifier: "identifier")
+    }
 
     func triggerIntervalLocalPushNotifications(pnContent: [String: String], identifier: String) {
 
