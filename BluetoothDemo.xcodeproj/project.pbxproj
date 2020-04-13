@@ -11,6 +11,7 @@
 		1654229321029CBB00C4B0BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1654229121029CBB00C4B0BD /* Main.storyboard */; };
 		1654229521029CBE00C4B0BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1654229421029CBE00C4B0BD /* Assets.xcassets */; };
 		1654229821029CBE00C4B0BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1654229621029CBE00C4B0BD /* LaunchScreen.storyboard */; };
+		DB35C828244497CE00B66EAE /* TaskSchedulerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB35C827244497CE00B66EAE /* TaskSchedulerManager.swift */; };
 		DBD3FB8124447C0B00DC497A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD3FB8024447C0B00DC497A /* HomeViewController.swift */; };
 		DBD3FBCC2444820D00DC497A /* BluetraceUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD3FBB22444820D00DC497A /* BluetraceUtils.swift */; };
 		DBD3FBCD2444820D00DC497A /* Encounter+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD3FBB52444820D00DC497A /* Encounter+Event.swift */; };
@@ -41,6 +42,7 @@
 		1654229421029CBE00C4B0BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1654229721029CBE00C4B0BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1654229921029CBE00C4B0BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB35C827244497CE00B66EAE /* TaskSchedulerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskSchedulerManager.swift; sourceTree = "<group>"; };
 		DBD3FB8024447C0B00DC497A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DBD3FBB22444820D00DC497A /* BluetraceUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetraceUtils.swift; sourceTree = "<group>"; };
 		DBD3FBB52444820D00DC497A /* Encounter+Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Encounter+Event.swift"; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 		165422A221029DDC00C4B0BD /* Bluetooth */ = {
 			isa = PBXGroup;
 			children = (
+				DB35C826244497AC00B66EAE /* BGTaskScheduler */,
 				DBD3FBB12444820D00DC497A /* Bluetrace */,
 			);
 			path = Bluetooth;
@@ -121,6 +124,14 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB35C826244497AC00B66EAE /* BGTaskScheduler */ = {
+			isa = PBXGroup;
+			children = (
+				DB35C827244497CE00B66EAE /* TaskSchedulerManager.swift */,
+			);
+			path = BGTaskScheduler;
 			sourceTree = "<group>";
 		};
 		DBD3FBB12444820D00DC497A /* Bluetrace */ = {
@@ -283,6 +294,7 @@
 				DBD3FBDF2444820D00DC497A /* BlueTraceLocalNotifications.swift in Sources */,
 				DBD3FBDA2444820D00DC497A /* Bluetrace.swift in Sources */,
 				DBD3FBCC2444820D00DC497A /* BluetraceUtils.swift in Sources */,
+				DB35C828244497CE00B66EAE /* TaskSchedulerManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
