@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1654228E21029CBB00C4B0BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1654228D21029CBB00C4B0BD /* AppDelegate.swift */; };
+		1654229321029CBB00C4B0BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1654229121029CBB00C4B0BD /* Main.storyboard */; };
+		1654229521029CBE00C4B0BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1654229421029CBE00C4B0BD /* Assets.xcassets */; };
+		1654229821029CBE00C4B0BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1654229621029CBE00C4B0BD /* LaunchScreen.storyboard */; };
+		DBD3FB8124447C0B00DC497A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD3FB8024447C0B00DC497A /* HomeViewController.swift */; };
+		DBD3FBCC2444820D00DC497A /* BluetraceUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD3FBB22444820D00DC497A /* BluetraceUtils.swift */; };
+		DBD3FBCD2444820D00DC497A /* Encounter+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD3FBB52444820D00DC497A /* Encounter+Event.swift */; };
+		DBD3FBCE2444820D00DC497A /* ConfigureDatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD3FBB62444820D00DC497A /* ConfigureDatabaseManager.swift */; };
+		DBD3FBCF2444820D00DC497A /* EncounterMessageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD3FBB72444820D00DC497A /* EncounterMessageManager.swift */; };
+		DBD3FBD02444820D00DC497A /* Encounter+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD3FBB82444820D00DC497A /* Encounter+CoreDataProperties.swift */; };
+		DBD3FBD12444820D00DC497A /* Encounter+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD3FBB92444820D00DC497A /* Encounter+CoreDataClass.swift */; };
+		DBD3FBD22444820D00DC497A /* tracer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DBD3FBBA2444820D00DC497A /* tracer.xcdatamodeld */; };
+		DBD3FBD32444820D00DC497A /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD3FBBC2444820D00DC497A /* DatabaseManager.swift */; };
+		DBD3FBD42444820D00DC497A /* Encounter+EncounterRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD3FBBD2444820D00DC497A /* Encounter+EncounterRecord.swift */; };
+		DBD3FBD52444820D00DC497A /* EncounterRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD3FBBF2444820D00DC497A /* EncounterRecord.swift */; };
+		DBD3FBD62444820D00DC497A /* BluetraceConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD3FBC02444820D00DC497A /* BluetraceConfig.swift */; };
+		DBD3FBD72444820D00DC497A /* PeripheralController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD3FBC12444820D00DC497A /* PeripheralController.swift */; };
+		DBD3FBD82444820D00DC497A /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD3FBC32444820D00DC497A /* Logger.swift */; };
+		DBD3FBD92444820D00DC497A /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD3FBC42444820D00DC497A /* DeviceInfo.swift */; };
+		DBD3FBDA2444820D00DC497A /* Bluetrace.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD3FBC62444820D00DC497A /* Bluetrace.swift */; };
+		DBD3FBDB2444820D00DC497A /* BluetraceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD3FBC72444820D00DC497A /* BluetraceProtocol.swift */; };
+		DBD3FBDC2444820D00DC497A /* BluetraceV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD3FBC82444820D00DC497A /* BluetraceV2.swift */; };
+		DBD3FBDD2444820D00DC497A /* BluetraceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD3FBC92444820D00DC497A /* BluetraceManager.swift */; };
+		DBD3FBDE2444820D00DC497A /* CentralController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD3FBCA2444820D00DC497A /* CentralController.swift */; };
+		DBD3FBDF2444820D00DC497A /* BlueTraceLocalNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD3FBCB2444820D00DC497A /* BlueTraceLocalNotifications.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1654228A21029CBB00C4B0BD /* BluetoothDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BluetoothDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1654228D21029CBB00C4B0BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1654229221029CBB00C4B0BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1654229421029CBE00C4B0BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1654229721029CBE00C4B0BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1654229921029CBE00C4B0BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBD3FB8024447C0B00DC497A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DBD3FBB22444820D00DC497A /* BluetraceUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetraceUtils.swift; sourceTree = "<group>"; };
+		DBD3FBB52444820D00DC497A /* Encounter+Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Encounter+Event.swift"; sourceTree = "<group>"; };
+		DBD3FBB62444820D00DC497A /* ConfigureDatabaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigureDatabaseManager.swift; sourceTree = "<group>"; };
+		DBD3FBB72444820D00DC497A /* EncounterMessageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncounterMessageManager.swift; sourceTree = "<group>"; };
+		DBD3FBB82444820D00DC497A /* Encounter+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Encounter+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DBD3FBB92444820D00DC497A /* Encounter+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Encounter+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DBD3FBBB2444820D00DC497A /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		DBD3FBBC2444820D00DC497A /* DatabaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		DBD3FBBD2444820D00DC497A /* Encounter+EncounterRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Encounter+EncounterRecord.swift"; sourceTree = "<group>"; };
+		DBD3FBBF2444820D00DC497A /* EncounterRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncounterRecord.swift; sourceTree = "<group>"; };
+		DBD3FBC02444820D00DC497A /* BluetraceConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetraceConfig.swift; sourceTree = "<group>"; };
+		DBD3FBC12444820D00DC497A /* PeripheralController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeripheralController.swift; sourceTree = "<group>"; };
+		DBD3FBC32444820D00DC497A /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		DBD3FBC42444820D00DC497A /* DeviceInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
+		DBD3FBC62444820D00DC497A /* Bluetrace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bluetrace.swift; sourceTree = "<group>"; };
+		DBD3FBC72444820D00DC497A /* BluetraceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetraceProtocol.swift; sourceTree = "<group>"; };
+		DBD3FBC82444820D00DC497A /* BluetraceV2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetraceV2.swift; sourceTree = "<group>"; };
+		DBD3FBC92444820D00DC497A /* BluetraceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetraceManager.swift; sourceTree = "<group>"; };
+		DBD3FBCA2444820D00DC497A /* CentralController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CentralController.swift; sourceTree = "<group>"; };
+		DBD3FBCB2444820D00DC497A /* BlueTraceLocalNotifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueTraceLocalNotifications.swift; sourceTree = "<group>"; };
+		DBF4A9062440CE02006F9B46 /* BluetoothDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BluetoothDemo.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1654228721029CBB00C4B0BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1654228121029CBB00C4B0BD = {
+			isa = PBXGroup;
+			children = (
+				1654228C21029CBB00C4B0BD /* BluetoothDemo */,
+				1654228B21029CBB00C4B0BD /* Products */,
+				C5D183B0A691E79492A32775 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1654228B21029CBB00C4B0BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1654228A21029CBB00C4B0BD /* BluetoothDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1654228C21029CBB00C4B0BD /* BluetoothDemo */ = {
+			isa = PBXGroup;
+			children = (
+				DBF4A9062440CE02006F9B46 /* BluetoothDemo.entitlements */,
+				165422A221029DDC00C4B0BD /* Bluetooth */,
+				1654228D21029CBB00C4B0BD /* AppDelegate.swift */,
+				DBD3FB8024447C0B00DC497A /* HomeViewController.swift */,
+				1654229121029CBB00C4B0BD /* Main.storyboard */,
+				1654229621029CBE00C4B0BD /* LaunchScreen.storyboard */,
+				1654229421029CBE00C4B0BD /* Assets.xcassets */,
+				1654229921029CBE00C4B0BD /* Info.plist */,
+			);
+			path = BluetoothDemo;
+			sourceTree = "<group>";
+		};
+		165422A221029DDC00C4B0BD /* Bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				DBD3FBB12444820D00DC497A /* Bluetrace */,
+			);
+			path = Bluetooth;
+			sourceTree = "<group>";
+		};
+		C5D183B0A691E79492A32775 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DBD3FBB12444820D00DC497A /* Bluetrace */ = {
+			isa = PBXGroup;
+			children = (
+				DBD3FBB22444820D00DC497A /* BluetraceUtils.swift */,
+				DBD3FBB32444820D00DC497A /* Database */,
+				DBD3FBC02444820D00DC497A /* BluetraceConfig.swift */,
+				DBD3FBC12444820D00DC497A /* PeripheralController.swift */,
+				DBD3FBCA2444820D00DC497A /* CentralController.swift */,
+				DBD3FBC92444820D00DC497A /* BluetraceManager.swift */,
+				DBD3FBCB2444820D00DC497A /* BlueTraceLocalNotifications.swift */,
+				DBD3FBC22444820D00DC497A /* Utils */,
+				DBD3FBC52444820D00DC497A /* Protocol */,
+			);
+			path = Bluetrace;
+			sourceTree = "<group>";
+		};
+		DBD3FBB32444820D00DC497A /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				DBD3FBB42444820D00DC497A /* Models */,
+				DBD3FBBE2444820D00DC497A /* Structs */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		DBD3FBB42444820D00DC497A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DBD3FBB52444820D00DC497A /* Encounter+Event.swift */,
+				DBD3FBB62444820D00DC497A /* ConfigureDatabaseManager.swift */,
+				DBD3FBB72444820D00DC497A /* EncounterMessageManager.swift */,
+				DBD3FBB82444820D00DC497A /* Encounter+CoreDataProperties.swift */,
+				DBD3FBB92444820D00DC497A /* Encounter+CoreDataClass.swift */,
+				DBD3FBBA2444820D00DC497A /* tracer.xcdatamodeld */,
+				DBD3FBBC2444820D00DC497A /* DatabaseManager.swift */,
+				DBD3FBBD2444820D00DC497A /* Encounter+EncounterRecord.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DBD3FBBE2444820D00DC497A /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				DBD3FBBF2444820D00DC497A /* EncounterRecord.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		DBD3FBC22444820D00DC497A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DBD3FBC32444820D00DC497A /* Logger.swift */,
+				DBD3FBC42444820D00DC497A /* DeviceInfo.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		DBD3FBC52444820D00DC497A /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				DBD3FBC62444820D00DC497A /* Bluetrace.swift */,
+				DBD3FBC72444820D00DC497A /* BluetraceProtocol.swift */,
+				DBD3FBC82444820D00DC497A /* BluetraceV2.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1654228921029CBB00C4B0BD /* BluetoothDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1654229C21029CBE00C4B0BD /* Build configuration list for PBXNativeTarget "BluetoothDemo" */;
+			buildPhases = (
+				1654228621029CBB00C4B0BD /* Sources */,
+				1654228721029CBB00C4B0BD /* Frameworks */,
+				1654228821029CBB00C4B0BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BluetoothDemo;
+			productName = BluetoothDemo;
+			productReference = 1654228A21029CBB00C4B0BD /* BluetoothDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1654228221029CBB00C4B0BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Wojciech Kulik";
+				TargetAttributes = {
+					1654228921029CBB00C4B0BD = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 1654228521029CBB00C4B0BD /* Build configuration list for PBXProject "BluetoothDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1654228121029CBB00C4B0BD;
+			productRefGroup = 1654228B21029CBB00C4B0BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1654228921029CBB00C4B0BD /* BluetoothDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1654228821029CBB00C4B0BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1654229821029CBE00C4B0BD /* LaunchScreen.storyboard in Resources */,
+				1654229521029CBE00C4B0BD /* Assets.xcassets in Resources */,
+				1654229321029CBB00C4B0BD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1654228621029CBB00C4B0BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBD3FBD52444820D00DC497A /* EncounterRecord.swift in Sources */,
+				DBD3FBD32444820D00DC497A /* DatabaseManager.swift in Sources */,
+				DBD3FBD92444820D00DC497A /* DeviceInfo.swift in Sources */,
+				DBD3FBD02444820D00DC497A /* Encounter+CoreDataProperties.swift in Sources */,
+				DBD3FBDE2444820D00DC497A /* CentralController.swift in Sources */,
+				DBD3FBCE2444820D00DC497A /* ConfigureDatabaseManager.swift in Sources */,
+				DBD3FBDD2444820D00DC497A /* BluetraceManager.swift in Sources */,
+				DBD3FBD12444820D00DC497A /* Encounter+CoreDataClass.swift in Sources */,
+				DBD3FB8124447C0B00DC497A /* HomeViewController.swift in Sources */,
+				DBD3FBD72444820D00DC497A /* PeripheralController.swift in Sources */,
+				1654228E21029CBB00C4B0BD /* AppDelegate.swift in Sources */,
+				DBD3FBDC2444820D00DC497A /* BluetraceV2.swift in Sources */,
+				DBD3FBDB2444820D00DC497A /* BluetraceProtocol.swift in Sources */,
+				DBD3FBCD2444820D00DC497A /* Encounter+Event.swift in Sources */,
+				DBD3FBCF2444820D00DC497A /* EncounterMessageManager.swift in Sources */,
+				DBD3FBD82444820D00DC497A /* Logger.swift in Sources */,
+				DBD3FBD22444820D00DC497A /* tracer.xcdatamodeld in Sources */,
+				DBD3FBD62444820D00DC497A /* BluetraceConfig.swift in Sources */,
+				DBD3FBD42444820D00DC497A /* Encounter+EncounterRecord.swift in Sources */,
+				DBD3FBDF2444820D00DC497A /* BlueTraceLocalNotifications.swift in Sources */,
+				DBD3FBDA2444820D00DC497A /* Bluetrace.swift in Sources */,
+				DBD3FBCC2444820D00DC497A /* BluetraceUtils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1654229121029CBB00C4B0BD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1654229221029CBB00C4B0BD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1654229621029CBE00C4B0BD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1654229721029CBE00C4B0BD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1654229A21029CBE00C4B0BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1654229B21029CBE00C4B0BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1654229D21029CBE00C4B0BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BluetoothDemo/BluetoothDemo.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZZMSXYL4ND;
+				INFOPLIST_FILE = BluetoothDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.magen.BluetoothDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1654229E21029CBE00C4B0BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BluetoothDemo/BluetoothDemo.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZZMSXYL4ND;
+				INFOPLIST_FILE = BluetoothDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.magen.BluetoothDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1654228521029CBB00C4B0BD /* Build configuration list for PBXProject "BluetoothDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1654229A21029CBE00C4B0BD /* Debug */,
+				1654229B21029CBE00C4B0BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1654229C21029CBE00C4B0BD /* Build configuration list for PBXNativeTarget "BluetoothDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1654229D21029CBE00C4B0BD /* Debug */,
+				1654229E21029CBE00C4B0BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DBD3FBBA2444820D00DC497A /* tracer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DBD3FBBB2444820D00DC497A /* Model.xcdatamodel */,
+			);
+			currentVersion = DBD3FBBB2444820D00DC497A /* Model.xcdatamodel */;
+			path = tracer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1654228221029CBB00C4B0BD /* Project object */;
+}
