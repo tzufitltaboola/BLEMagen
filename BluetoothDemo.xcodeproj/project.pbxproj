@@ -12,6 +12,8 @@
 		1654229521029CBE00C4B0BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1654229421029CBE00C4B0BD /* Assets.xcassets */; };
 		1654229821029CBE00C4B0BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1654229621029CBE00C4B0BD /* LaunchScreen.storyboard */; };
 		DB35C828244497CE00B66EAE /* TaskSchedulerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB35C827244497CE00B66EAE /* TaskSchedulerManager.swift */; };
+		DB39B01524459F8900792FA5 /* BluetoothHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB39B01424459F8900792FA5 /* BluetoothHandler.swift */; };
+		DB39B0192445A1A000792FA5 /* BluetoothHandlerBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = DB39B0182445A1A000792FA5 /* BluetoothHandlerBridge.m */; };
 		DBD3FB8124447C0B00DC497A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD3FB8024447C0B00DC497A /* HomeViewController.swift */; };
 		DBD3FBCC2444820D00DC497A /* BluetraceUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD3FBB22444820D00DC497A /* BluetraceUtils.swift */; };
 		DBD3FBCD2444820D00DC497A /* Encounter+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD3FBB52444820D00DC497A /* Encounter+Event.swift */; };
@@ -43,6 +45,9 @@
 		1654229721029CBE00C4B0BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1654229921029CBE00C4B0BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB35C827244497CE00B66EAE /* TaskSchedulerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskSchedulerManager.swift; sourceTree = "<group>"; };
+		DB39B01424459F8900792FA5 /* BluetoothHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothHandler.swift; sourceTree = "<group>"; };
+		DB39B0172445A19F00792FA5 /* BluetoothDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BluetoothDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		DB39B0182445A1A000792FA5 /* BluetoothHandlerBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BluetoothHandlerBridge.m; sourceTree = "<group>"; };
 		DBD3FB8024447C0B00DC497A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DBD3FBB22444820D00DC497A /* BluetraceUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetraceUtils.swift; sourceTree = "<group>"; };
 		DBD3FBB52444820D00DC497A /* Encounter+Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Encounter+Event.swift"; sourceTree = "<group>"; };
@@ -134,9 +139,20 @@
 			path = BGTaskScheduler;
 			sourceTree = "<group>";
 		};
+		DB39B0162445A12D00792FA5 /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				DB39B01424459F8900792FA5 /* BluetoothHandler.swift */,
+				DB39B0182445A1A000792FA5 /* BluetoothHandlerBridge.m */,
+				DB39B0172445A19F00792FA5 /* BluetoothDemo-Bridging-Header.h */,
+			);
+			path = Bridge;
+			sourceTree = "<group>";
+		};
 		DBD3FBB12444820D00DC497A /* Bluetrace */ = {
 			isa = PBXGroup;
 			children = (
+				DB39B0162445A12D00792FA5 /* Bridge */,
 				DBD3FBB22444820D00DC497A /* BluetraceUtils.swift */,
 				DBD3FBB32444820D00DC497A /* Database */,
 				DBD3FBC02444820D00DC497A /* BluetraceConfig.swift */,
@@ -233,6 +249,7 @@
 				TargetAttributes = {
 					1654228921029CBB00C4B0BD = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -277,6 +294,7 @@
 				DBD3FBD92444820D00DC497A /* DeviceInfo.swift in Sources */,
 				DBD3FBD02444820D00DC497A /* Encounter+CoreDataProperties.swift in Sources */,
 				DBD3FBDE2444820D00DC497A /* CentralController.swift in Sources */,
+				DB39B01524459F8900792FA5 /* BluetoothHandler.swift in Sources */,
 				DBD3FBCE2444820D00DC497A /* ConfigureDatabaseManager.swift in Sources */,
 				DBD3FBDD2444820D00DC497A /* BluetraceManager.swift in Sources */,
 				DBD3FBD12444820D00DC497A /* Encounter+CoreDataClass.swift in Sources */,
@@ -288,6 +306,7 @@
 				DBD3FBCD2444820D00DC497A /* Encounter+Event.swift in Sources */,
 				DBD3FBCF2444820D00DC497A /* EncounterMessageManager.swift in Sources */,
 				DBD3FBD82444820D00DC497A /* Logger.swift in Sources */,
+				DB39B0192445A1A000792FA5 /* BluetoothHandlerBridge.m in Sources */,
 				DBD3FBD22444820D00DC497A /* tracer.xcdatamodeld in Sources */,
 				DBD3FBD62444820D00DC497A /* BluetraceConfig.swift in Sources */,
 				DBD3FBD42444820D00DC497A /* Encounter+EncounterRecord.swift in Sources */,
@@ -438,6 +457,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = BluetoothDemo/BluetoothDemo.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +470,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.magen.BluetoothDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "BluetoothDemo/Bluetooth/Bluetrace/Bridge/BluetoothDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -459,6 +481,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = BluetoothDemo/BluetoothDemo.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
@@ -471,6 +494,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.magen.BluetoothDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "BluetoothDemo/Bluetooth/Bluetrace/Bridge/BluetoothDemo-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
